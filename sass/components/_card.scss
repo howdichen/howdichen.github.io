@@ -69,20 +69,21 @@
     border-top-left-radius: 3px;
 
     &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
-        ),
-        url(../img/nat-5.jpg); //注意這是針對build過的相對路徑，在這裡是是對應style.css
+      // background-image: linear-gradient(
+      //     to right bottom,
+      //     $color-secondary-light,
+      //     $color-secondary-dark
+      //   ),
+      //   url(../img/hanli_In.jpg); //注意這是針對build過的相對路徑，在這裡是是對應style.css
+      background-image: url(../img/hanli_In.jpg); //注意這是針對build過的相對路徑，在這裡是是對應style.css
     }
     &--2 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-light,
-          $color-primary-dark
-        ),
-        url(../img/nat-6.jpg); //注意這是針對build過的相對路徑，在這裡是是對應style.css
+      background-image: url(../img/hanli_w.jpg);
+      // linear-gradient(
+      //   to right bottom,
+      //   $color-primary-light,
+      //   $color-primary-dark
+      // ),
     }
   }
   &__heading {
@@ -135,22 +136,31 @@
     }
   }
 
+  &__details.card__details--2 {
+    ul {
+      li {
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+  }
+
   //Front Side Styling
   &__cta {
     width: 90%;
     text-align: center;
     @include Placecenter;
   }
-  &__price-box {
+  &__back-box {
     text-align: center;
     color: $color-white;
     margin-bottom: 8rem;
   }
-  &__price-only {
+  &__back-only {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
-  &__price-value {
+  &__back-value {
     font-size: 6rem;
     font-weight: 100;
   }
