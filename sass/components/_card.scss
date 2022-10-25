@@ -204,13 +204,13 @@
       width: 100%;
       padding: 7rem 4rem 4rem 4rem;
     }
-    &__price-box {
+    &__back-box {
       margin-bottom: 3rem;
     }
-    &__price-value {
+    &__back-value {
       font-size: 4rem;
       @include respond(phone) {
-        font-size: 2rem;
+        font-size: 3rem;
       }
     }
   }

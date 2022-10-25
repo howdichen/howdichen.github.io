@@ -276,13 +276,13 @@ body {
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
+      .card__back-box {
         margin-bottom: 3rem; }
-      .card__price-value {
+      .card__back-value {
         font-size: 4rem; } }
     @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
-      .card__price-value {
-        font-size: 2rem; } }
+      .card__back-value {
+        font-size: 3rem; } }
 
 .header {
   position: relative;
@@ -341,8 +341,8 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 2rem;
-      letter-spacing: 1rem;
-      font-family: 5rem; } }
+      letter-spacing: 0.5rem;
+      font-family: 4rem; } }
 
 .header__btn {
   animation: moveInBottom;
