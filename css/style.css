@@ -77,6 +77,10 @@ body {
     /*最終位置=>到現在的位置*/
     /*動畫結束*/ } }
 
+body {
+  display: flex;
+  flex-direction: column; }
+
 .btn {
   /*也是一種selector 就像是超連結沒點過是藍色，點過是紫色*/ }
   .btn, .btn:link, .btn:visited {
@@ -160,7 +164,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  display: flex; }
   .card__side {
     height: 50rem;
     transition: all 0.8s ease;
