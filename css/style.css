@@ -164,8 +164,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
-  display: flex; }
+  height: 50rem; }
   .card__side {
     height: 50rem;
     transition: all 0.8s ease;
@@ -200,9 +199,9 @@ body {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px; }
     .card__picture--1 {
-      background-image: url(../img/hanli_In.jpg); }
+      background-image: url("../img/hanli_In.jpg"); }
     .card__picture--2 {
-      background-image: url(../img/hanli_w.jpg); }
+      background-image: url("../img/hanli_w.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -281,6 +280,9 @@ body {
         margin-bottom: 3rem; }
       .card__price-value {
         font-size: 4rem; } }
+    @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
+      .card__price-value {
+        font-size: 2rem; } }
 
 .header {
   position: relative;
@@ -293,6 +295,9 @@ body {
   height: 85vh;
   top: 0;
   background-size: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .header__pic {
+      background-position: center center; } }
 
 .header__container {
   position: absolute;
@@ -335,6 +340,7 @@ body {
   /*animation-timing-function: ;播放動畫的速度曲線，預設為線性*/ }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
+      font-size: 2rem;
       letter-spacing: 1rem;
       font-family: 5rem; } }
 
@@ -348,12 +354,19 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .card-container {
+      flex-direction: column; } }
 
 .card {
   width: 35%; }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      width: 70%;
+      margin-bottom: 5rem; } }
 
 .gmap {
-  margin-top: 10rem; }
+  margin: 10rem 0; }
 
 .gmap__container {
   display: block;
@@ -389,6 +402,36 @@ body {
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in; }
+  .panel-1 {
+    background-image: url("../img/H1.jpg");
+    background-position: center top; }
+    @media only screen and (max-width: 37.5em) {
+      .panel-1 {
+        background-position: center center; } }
+  .panel-2 {
+    background-image: url("../img/H2.jpg");
+    background-position: center top; }
+    @media only screen and (max-width: 37.5em) {
+      .panel-2 {
+        background-position: left center; } }
+  .panel-3 {
+    background-image: url("../img/H3.jpg");
+    background-position: center top; }
+    @media only screen and (max-width: 37.5em) {
+      .panel-3 {
+        background-position: left center; } }
+  .panel-4 {
+    background-image: url("../img/W1.jpg");
+    background-position: center top; }
+    @media only screen and (max-width: 37.5em) {
+      .panel-4 {
+        background-position: center center; } }
+  .panel-5 {
+    background-image: url("../img/H4.jpg");
+    background-position: center top; }
+    @media only screen and (max-width: 37.5em) {
+      .panel-5 {
+        background-position: center center; } }
 
 .panel h3 {
   font-size: 24px;
@@ -407,6 +450,4 @@ body {
 
 @media (max-width: 480px) {
   .gallery__container {
-    width: 100vw; }
-  .panel:nth-of-type(4).panel:nth-of-type(5) {
-    display: none; } }
+    width: 100vw; } }

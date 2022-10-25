@@ -1,13 +1,13 @@
 .section-cards {
   margin-top: 10rem;
 }
+
 .card {
   //function
   perspective: 150rem; //設定透視。指定觀察者與平面的距離。越靠近Z軸效果越明顯
   -moz-perspective: 150rem; //for firefox
   position: relative;
   height: 50rem;
-  display: flex;
 
   &__side {
     height: 50rem;
@@ -76,10 +76,10 @@
       //     $color-secondary-dark
       //   ),
       //   url(../img/hanli_In.jpg); //注意這是針對build過的相對路徑，在這裡是是對應style.css
-      background-image: url(../img/hanli_In.jpg); //注意這是針對build過的相對路徑，在這裡是是對應style.css
+      background-image: url($pic-hanli-inside); //注意這是針對build過的相對路徑，在這裡是是對應style.css
     }
     &--2 {
-      background-image: url(../img/hanli_w.jpg);
+      background-image: url($pic-hanli-building);
       // linear-gradient(
       //   to right bottom,
       //   $color-primary-light,
@@ -209,6 +209,9 @@
     }
     &__price-value {
       font-size: 4rem;
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
   }
 }

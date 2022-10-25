@@ -10,6 +10,9 @@
   height: 85vh;
   top: 0;
   background-size: cover;
+  @include respond(phone) {
+    background-position: center center;
+  }
 }
 //測試stiky
 .header__container {
@@ -66,6 +69,7 @@
   /*animation-iteration-count:2 ;重複播放次數*/
   /*animation-timing-function: ;播放動畫的速度曲線，預設為線性*/
   @include respond(phone) {
+    font-size: 2rem;
     letter-spacing: 1rem;
     font-family: 5rem;
   }

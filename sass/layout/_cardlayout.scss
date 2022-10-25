@@ -5,8 +5,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 .card {
   width: 35%;
+
+  @include respond(phone) {
+    width: 70%;
+    margin-bottom: 5rem;
+  }
 }

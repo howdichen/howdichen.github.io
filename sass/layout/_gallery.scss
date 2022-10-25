@@ -18,6 +18,42 @@
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
+
+  &-1 {
+    background-image: url($panel-1);
+    background-position: center top;
+    @include respond(phone) {
+      background-position: center center;
+    }
+  }
+  &-2 {
+    background-image: url($panel-2);
+    background-position: center top;
+    @include respond(phone) {
+      background-position: left center;
+    }
+  }
+  &-3 {
+    background-image: url($panel-3);
+    background-position: center top;
+    @include respond(phone) {
+      background-position: left center;
+    }
+  }
+  &-4 {
+    background-image: url($panel-4);
+    background-position: center top;
+    @include respond(phone) {
+      background-position: center center;
+    }
+  }
+  &-5 {
+    background-image: url($panel-5);
+    background-position: center top;
+    @include respond(phone) {
+      background-position: center center;
+    }
+  }
 }
 
 .panel h3 {
@@ -43,7 +79,7 @@
     width: 100vw;
   }
 
-  .panel:nth-of-type(4).panel:nth-of-type(5) {
-    display: none;
-  }
+  // .panel:nth-of-type(4).panel:nth-of-type(5) {
+  //   display: none;
+  // }
 }
