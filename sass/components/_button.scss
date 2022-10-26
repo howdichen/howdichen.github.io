@@ -35,11 +35,11 @@
   }
 
   &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
+    background-color: $color-white !important;
+    color: $color-grey-dark !important;
 
     &::after {
-      background-color: $color-white;
+      background-color: $color-white !important;
     }
   }
 

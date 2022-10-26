@@ -1,11 +1,13 @@
 //header最外層
 .header {
+  margin-top: 3rem;
   position: relative;
   height: 200vh;
 }
 .header__pic {
   position: sticky;
   background-image: url($pic-header);
+  background-position: center center;
   width: 100%;
   height: 85vh;
   top: 0;

@@ -8,15 +8,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- <link
+      rel="stylesheet"
+      href="css/bootstrap_Quartz.css"
+      asp-append-version="true"
+    /> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>H&R wedding</title>
   </head>
   <body>
-    <header class="header">
+    <!--NAV-->
+    <nav class="nav">
+      <div class="container">
+        <h1 class="logo"><a href="#header">H&R Wedding</a></h1>
+        <ul>
+          <li><a href="#header">首頁</a></li>
+          <li><a href="#card">婚禮資訊</a></li>
+          <li><a href="#gmap">地圖</a></li>
+          <li><a href="#gallery">照片</a></li>
+          <li>
+            <a
+              href="https://www.quiwa.net/User/QuestionReply?id=613ad5b9-c372-4d54-b2a0-4b8d39114a82"
+              >出席問卷</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--NAV---->
+    <header id="header" class="header">
       <div class="header__pic"></div>
       <div class="header__container">
         <div class="header__text-box">
@@ -31,7 +58,7 @@
       </div>
     </header>
     <!-- --------------- -->
-    <section class="section-cards">
+    <section id="card" class="section-cards">
       <div class="card-container">
         <div class="card">
           <div class="card__side card__side--front">
@@ -65,7 +92,7 @@
         </div>
 
         <!-- ---------卡片------ -->
-        <div class="card">
+        <div id="card" class="card">
           <div class="card__side card__side--front">
             <div class="card__picture card__picture--2">&nbsp;</div>
             <h4 class="card__heading">
@@ -100,7 +127,7 @@
     </section>
 
     <!-- -----------maps-------------- -->
-    <section class="gmap">
+    <section id="gmap" class="gmap">
       <div class="gmap__container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9198558522817!2d120.29458321450896!3d22.619467785158623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047fb889e755%3A0xbf9da0eae0608cac!2z5ryi5L6G5aSn6aOv5bqXIEdyYW5kIEhpLUxhaSBIb3RlbA!5e0!3m2!1szh-TW!2sus!4v1666237124468!5m2!1szh-TW!2sus"
@@ -115,7 +142,7 @@
     </section>
 
     <!-- --------------- -->
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="gallery__container">
         <div class="panel panel-1 active">
           <!-- <h3>Explore The World</h3> -->
@@ -136,5 +163,6 @@
       </div>
     </section>
     <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
   </body>
 </html>
