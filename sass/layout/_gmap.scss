@@ -1,8 +1,7 @@
 .gmap {
   // display: flex;
   // justify-content: center;
-  margin: 10rem 0;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  padding-top: 10rem;
 }
 .gmap__container {
   display: block;
@@ -11,7 +10,7 @@
   height: 0;
   padding: 0;
   padding-bottom: 75%;
-
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   iframe {
     position: absolute;
     height: 100%;
