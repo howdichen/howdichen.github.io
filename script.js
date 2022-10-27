@@ -1,3 +1,4 @@
+//gallery
 //nodelist 類似array
 const panels = document.querySelectorAll(".panel");
 
@@ -16,6 +17,7 @@ function removeActiveClasses() {
   });
 }
 
+//dayleft
 const day = document.getElementById("dayleft");
 day.innerText = dayleft();
 
@@ -33,6 +35,7 @@ function dayleft() {
   return `還有${a}天`;
 }
 
+//header
 const nav = document.querySelector(".nav");
 window.addEventListener("scroll", fixNav);
 

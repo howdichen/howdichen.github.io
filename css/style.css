@@ -331,6 +331,11 @@ body {
   color: #c0392b;
   font-weight: bold; }
 
+.nav.active a.current,
+.nav.active a:hover {
+  color: #000;
+  font-weight: bold; }
+
 .header {
   margin-top: 3rem;
   position: relative;
