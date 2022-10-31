@@ -355,12 +355,13 @@ body {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out; }
 
-.car_buttons-container {
+.car_button-container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-content: center; }
 
 .car_btn {
-  background-color: rebeccapurple;
+  background-color: #bf7fb3;
   color: #fff;
   border: none;
   padding: 0.5rem;
