@@ -1,26 +1,53 @@
 .gallery {
-  padding: 10rem 0;
-  margin-bottom: 10rem;
-  width: 100%;
-  height: 500px;
-}
-.gallery__container {
   display: flex;
-  width: 90vw;
+  padding: 10rem 0;
+  align-items: center;
+  justify-content: center;
 }
-.panel {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 50px;
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /*包括下面的按鈕*/
+  height: 63rem;
+  width: 60rem;
+  overflow: hidden;
+}
+
+.car_image-container {
+  width: 600rem;
+  display: flex;
+  /*讓js去改變值*/
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.car_buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car_btn {
+  background-color: rebeccapurple;
   color: #fff;
+  border: none;
+  padding: 0.5rem;
   cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
-  position: relative;
-  transition: flex 0.7s ease-in;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  width: 49.75%;
+}
+
+.car_btn:hover {
+  opacity: 0.9;
+}
+
+.car_btn:focus {
+  outline: none;
+}
+
+.car_img {
+  width: 60rem;
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &-1 {
     background-image: url($panel-1);
@@ -29,6 +56,7 @@
       background-position: 60% center;
     }
   }
+
   &-2 {
     background-image: url($panel-2);
     background-position: center 30%;
@@ -57,32 +85,4 @@
       background-position: 45% center;
     }
   }
-}
-
-.panel h3 {
-  font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
-
-.panel.active {
-  flex: 5;
-}
-
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-}
-
-@media (max-width: 480px) {
-  .gallery__container {
-    width: 100vw;
-  }
-
-  // .panel:nth-of-type(4).panel:nth-of-type(5) {
-  //   display: none;
-  // }
 }
