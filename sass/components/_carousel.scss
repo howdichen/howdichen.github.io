@@ -11,10 +11,15 @@
   height: 63rem;
   width: 60rem;
   overflow: hidden;
+  @include respond(phone) {
+    height: 53rem;
+    width: 50rem;
+  }
 }
 
 .car_image-container {
   width: 600rem;
+
   display: flex;
   /*讓js去改變值*/
   transform: translateX(0);
@@ -32,7 +37,7 @@
   border: none;
   padding: 0.5rem;
   cursor: pointer;
-  width: 49.75%;
+  width: 49.5%;
 }
 
 .car_btn:hover {
@@ -46,6 +51,10 @@
 .car_img {
   width: 60rem;
   height: 60rem;
+  @include respond(phone) {
+    height: 50rem;
+    width: 50rem;
+  }
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -53,7 +62,7 @@
     background-image: url($panel-1);
     background-position: center top;
     @include respond(phone) {
-      background-position: 60% center;
+      background-position: 80% top;
     }
   }
 

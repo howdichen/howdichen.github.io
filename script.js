@@ -57,18 +57,23 @@ const img = document.querySelectorAll("#imgs div");
 
 let idx = 0;
 let interval = setInterval(run, 2000);
+
 function run() {
   idx++;
   changeImage();
 }
 
 function changeImage() {
+  const img1 = document.querySelector(".car_img-1");
+  let img1Data = img1.getBoundingClientRect();
+  let imgwidth = img1Data.width;
+
   if (idx > img.length - 1) {
     idx = 0;
   } else if (idx < 0) {
     idx = img.length - 1;
   }
-  imgs.style.transform = `translateX(${-idx * 60}rem)`;
+  imgs.style.transform = `translateX(${-idx * imgwidth}px)`;
 }
 
 function resetInterval() {
