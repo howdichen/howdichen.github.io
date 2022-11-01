@@ -384,35 +384,21 @@ body {
       height: 50rem;
       width: 50rem; } }
   .car_img-1 {
-    background-image: url("../img/G6.jpg");
-    background-position: center top; }
-    @media only screen and (max-width: 37.5em) {
-      .car_img-1 {
-        background-position: 80% top; } }
+    background-image: url("../img/Ga1.jpg"); }
   .car_img-2 {
-    background-image: url("../img/G2.jpg");
-    background-position: center 30%; }
-    @media only screen and (max-width: 37.5em) {
-      .car_img-2 {
-        background-position: left center; } }
+    background-image: url("../img/Ga2.jpg"); }
   .car_img-3 {
-    background-image: url("../img/G3.jpg");
-    background-position: center top; }
-    @media only screen and (max-width: 37.5em) {
-      .car_img-3 {
-        background-position: 55% center; } }
+    background-image: url("../img/Ga3.jpg"); }
   .car_img-4 {
-    background-image: url("../img/G4.jpg");
-    background-position: center 70%; }
-    @media only screen and (max-width: 37.5em) {
-      .car_img-4 {
-        background-position: 70% center; } }
+    background-image: url("../img/Ga4.jpg"); }
   .car_img-5 {
-    background-image: url("../img/G5.jpg");
-    background-position: center top; }
-    @media only screen and (max-width: 37.5em) {
-      .car_img-5 {
-        background-position: 45% center; } }
+    background-image: url("../img/Ga5.jpg"); }
+  .car_img-6 {
+    background-image: url("../img/Ga6.jpg"); }
+  .car_img-7 {
+    background-image: url("../img/Ga7.jpg"); }
+  .car_img-8 {
+    background-image: url("../img/Ga8.jpg"); }
 
 .header {
   margin-top: 3rem;

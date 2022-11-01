@@ -61,38 +61,59 @@
 
   &-1 {
     background-image: url($panel-1);
-    background-position: center top;
-    @include respond(phone) {
-      background-position: 80% top;
-    }
+    // background-position: center top;
+    // @include respond(phone) {
+    //   background-position: 80% top;
+    // }
   }
 
   &-2 {
     background-image: url($panel-2);
-    background-position: center 30%;
-    @include respond(phone) {
-      background-position: left center;
-    }
+    // background-position: center 30%;
+    // @include respond(phone) {
+    //   background-position: left center;
+    // }
   }
   &-3 {
     background-image: url($panel-3);
-    background-position: center top;
-    @include respond(phone) {
-      background-position: 55% center;
-    }
+    // background-position: center top;
+    // @include respond(phone) {
+    //   background-position: 55% center;
+    // }
   }
   &-4 {
     background-image: url($panel-4);
-    background-position: center 70%;
-    @include respond(phone) {
-      background-position: 70% center;
-    }
+    // background-position: center 70%;
+    // @include respond(phone) {
+    //   background-position: 70% center;
+    // }
   }
   &-5 {
     background-image: url($panel-5);
-    background-position: center top;
-    @include respond(phone) {
-      background-position: 45% center;
-    }
+    // background-position: center top;
+    // @include respond(phone) {
+    //   background-position: 45% center;
+    // }
+  }
+  &-6 {
+    background-image: url($panel-6);
+    // background-position: center top;
+    // @include respond(phone) {
+    //   background-position: 45% center;
+    // }
+  }
+  &-7 {
+    background-image: url($panel-7);
+    // background-position: center top;
+    // @include respond(phone) {
+    //   background-position: 45% center;
+    // }
+  }
+  &-8 {
+    background-image: url($panel-8);
+    // background-position: center top;
+    // @include respond(phone) {
+    //   background-position: 45% center;
+    // }
   }
 }
